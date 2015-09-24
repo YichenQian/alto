@@ -28,14 +28,14 @@ The features that ECS provides are showed below:
 	* **Important:** Don’t forget to edit your ~/.m2/settings.xml file otherwise you will not be able to download any ODL Java dependencies.
 
 #### Get ALTO project
-TODO
+* Get ALTO project.
 
 #### Build and Install ALTO
 * Enter your ALTO project root directory.
 * Checkout to feature/ecs branch and run `mvn install` to build ALTO project.
 
 ### Replace L2 Switch
-* Get modified l2switch code.(TODO)
+* Get modified l2switch code.
 * Put the l2switch folder into ~/.m2/repository/org/opendaylight/ and replace the original l2switch folder.
 
 ## Using Endpoint Cost Service in ALTO
@@ -43,12 +43,18 @@ TODO
 ### Run ALTO in Karaf
 * Enter into alto-karaf/target/assembly/ directory.* Run command ./bin/karaf to start the karaf.	* It will take some time to install features, initialize services and download dependencies. Be patient and check ./data/log/karaf.log file to track the latest status.
 
-### Input 
+### Generate network (just for emulation)
+* For emulation:
 
+	You can use mininet to emulate a network environment. (For emulation)
+	
+		sudo mn --contorller remote,127.0.0.1 --topo tree,3 --switch ovsk,protocols=OpenFlow13
 
 ### Hop count
 
+
 ### Routing cost
+
 
 ### Available bandwidth
 
