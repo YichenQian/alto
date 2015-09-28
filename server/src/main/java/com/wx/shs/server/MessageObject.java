@@ -1,4 +1,7 @@
-package com.wx.shs.client;
+package com.wx.shs.server;
+
+import com.wx.shs.schedule.DataTransferTaskForClient;
+import com.wx.shs.schedule.SyncTaskForClient;
 
 public class MessageObject {
 

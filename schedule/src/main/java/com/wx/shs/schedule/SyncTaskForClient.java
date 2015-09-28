@@ -2,24 +2,11 @@ package com.wx.shs.schedule;
 
 import java.util.List;
 
-public class SyncTask {
-    String id;
-    
-    List<String> inputs;
+public class SyncTaskForClient {
+
+	List<String> inputs;
     
     List<String> outputs;
-    
-    public SyncTask(String id){
-    	this.id = id;
-    }
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
 
 	public List<String> getInputs() {
 		return inputs;

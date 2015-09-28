@@ -9,7 +9,10 @@ import java.util.Map;
 public class Scheduler {
 
 	private List<String> getLeafTaskId(Map<String, List<String>> dependencies){
+		if(dependencies.isEmpty())return null;
+		
 		List<String> results = new ArrayList<String>();
+		
 		for(Map.Entry<String, List<String>> entry: dependencies.entrySet()){
 			results.add(entry.getKey());
 			for(String id: entry.getValue()){
@@ -28,6 +31,10 @@ public class Scheduler {
 		List<DataTransferTask> results = new ArrayList<DataTransferTask>();
 		List<DataTransferTask> allTasks = p.getWaitingQueue();
 		List<String> leafs = getLeafTaskId(dependencies);
+		if(leafs == null){
+			System.out.println("leaf is null at getAvailableTasks");
+			return allTasks;
+		}
 		for(DataTransferTask task: allTasks){
 			String id = task.getId();
 			if(leafs.contains(id))results.add(task);
@@ -40,7 +47,12 @@ public class Scheduler {
 		int max = 0;
 		List<DataTransferTask> results = new ArrayList<DataTransferTask>();
 		for(DataTransferTask task: tasks){
-			int successor = dependencies.get(task.getId()).size();
+			int successor = 0;
+			if(!dependencies.containsKey(task.getId())){
+				
+			}else{
+				successor = dependencies.get(task.getId()).size();
+			}
 			System.out.println("num of suc"+successor);
 			if(successor == max){
 				results.add(task);
@@ -50,16 +62,18 @@ public class Scheduler {
 				results.add(task);
 			}
 		}
-		System.out.println("max successor:"+results.size());
+		System.out.println("max successor task:"+results.size());
 		return results;
 	}
 	
-	public DataTransferTask getNextTaskForPortPair(PortPair src, NetworkModel nm, Map<String, List<String>> dependencies) {
+	public DataTransferTask getNextTaskForPortPair(PortPair pp, NetworkModel nm, Map<String, List<String>> dependencies) {
         DataTransferTask result = null;
-        List<DataTransferTask> candicates = getAvailableTasks(src, dependencies);
+        List<DataTransferTask> candicates = getAvailableTasks(pp, dependencies);
         List<DataTransferTask> candicates2 = getMaxSuccessorTasks(candicates, dependencies);
         if(candicates2.size() > 1){
         	result = Collections.min(candicates2);
+        }else if(candicates2.size() == 1){
+        	result = candicates2.get(0);
         }
         return result;
 	}

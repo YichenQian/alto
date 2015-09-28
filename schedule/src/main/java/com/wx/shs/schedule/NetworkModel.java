@@ -4,17 +4,45 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 public class NetworkModel {
-    Map<Integer, Map<Integer, Double>> costMap;
+    Map<Integer, Map<Integer, Double>> costMap;// port cost
+    
+    boolean updated;
     
     List<Port> ports;
     
     List<PortPair> portPairs;
     
-    Map<String, PortPair> portPairMaps;//key is srcId_dstId
+    public boolean isUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(boolean updated) {
+		this.updated = updated;
+	}
+
+	public List<Port> getPorts() {
+		return ports;
+	}
+
+	public void setPorts(List<Port> ports) {
+		this.ports = ports;
+	}
+
+	ConcurrentMap<String, PortPair> portPairMaps;//key is srcId_dstId
     
-    public List<PortPair> getPortPairs() {
+    public ConcurrentMap<String, PortPair> getPortPairMaps() {
+		return portPairMaps;
+	}
+
+	public void setPortPairMaps(ConcurrentMap<String, PortPair> portPairMaps) {
+		this.portPairMaps = portPairMaps;
+	}
+
+	public List<PortPair> getPortPairs() {
 		return portPairs;
 	}
 
@@ -26,7 +54,7 @@ public class NetworkModel {
     	costMap = new HashMap<Integer, Map<Integer, Double>>();
     	ports = new ArrayList<Port>();
     	portPairs = new ArrayList<PortPair>();
-    	portPairMaps = new HashMap<String, PortPair>();
+    	portPairMaps = new ConcurrentHashMap<String, PortPair>();
     }
 	
 	public void addDataTransferTaskForPortPair(int srcId, int dstId, DataTransferTask task){
@@ -35,19 +63,28 @@ public class NetworkModel {
 		    PortPair pp = this.portPairMaps.get(key);
 		    pp.addDataTransferTask(task);
 		    this.portPairMaps.put(key, pp);
+		    this.portPairs.add(pp);
 		}else{
 			PortPair pp = new PortPair();
 			pp.setSrcId(srcId);
 			pp.setDstId(dstId);
 			pp.waitingQueue.add(task);
 			this.portPairMaps.put(key, pp);
+			this.portPairs.add(pp);
 		}
 	}
     
     public void updateCostMap(int src, int dst, double cost){
-    	Map<Integer, Double> dstCost = new HashMap<Integer, Double>();
-    	dstCost.put(dst, cost);
-    	costMap.put(src, dstCost);
+    	if(costMap.containsKey(src)){
+    		Map<Integer, Double> dstCostTemp = costMap.get(src);
+    		dstCostTemp.put(dst, cost);
+    		costMap.put(src, dstCostTemp);
+    	}else{
+    		Map<Integer, Double> dstCost = new HashMap<Integer, Double>();
+    		dstCost.put(dst, cost);
+    		costMap.put(src, dstCost);
+    	}
+    	//updateCostMap(dst, src, cost);
     }
     
     public void updateCostMapALL(){
@@ -57,7 +94,7 @@ public class NetworkModel {
     public void portMissing(Endhost endhost){
     	
     }
-        
+    
     public int addPort(Port p){
     	int id = this.ports.size();
     	p.setId(id);
