@@ -1,0 +1,41 @@
+[Version]
+Signature="$Windows NT$"
+Provider=%MS%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+DriverVer=11/25/2012,1.00.0001
+CatalogFile=TVPSPrint.cat
+
+[Manufacturer]
+"TeamViewer"=TeamViewer, NTamd64, NTia64
+
+
+[TeamViewer]
+"TeamViewer PScript Printer"=teamviewer.ppd,,TeamViewer_PScript_Printer
+
+
+[teamviewer.NTamd64]
+"TeamViewer PScript Printer"=teamviewer.ppd,,TeamViewer_PScript_Printer
+
+[teamviewer.NTia64]
+"TeamViewer PScript Printer"=teamviewer.ppd,,TeamViewer_PScript_Printer
+
+[teamviewer.ppd]
+CopyFiles=@teamviewer.ppd
+DataSection=PSCRIPT_DATA
+Include=NTPRINT.INF
+Needs=PSCRIPT.OEM
+
+[SourceDisksFiles]
+teamviewer.ppd = 1
+
+[SourceDisksNames]
+1 = %TVPSEN%,,,\
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[Strings]
+PrinterClassName="Printers"
+MS="TeamViewer"
+TVPSEN="TeamViewer PScript Printer Setup Disk 1"

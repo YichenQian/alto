@@ -1,0 +1,44 @@
+[Version]
+Signature="$Windows NT$"
+Provider=%MS%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+DriverVer=05/08/2012,1.00.0001
+CatalogFile=TVPrint.cat
+
+[Manufacturer]
+"TeamViewer"=TeamViewer, NTamd64, NTia64
+
+
+[TeamViewer]
+"TeamViewer"=teamviewer.gpd,,TeamViewer_Printer
+
+
+[teamviewer.NTamd64]
+"TeamViewer"= teamviewer.gpd,,Teamviewer_Printer
+
+[teamviewer.NTia64]
+"TeamViewer"= teamviewer.gpd,,Teamviewer_Printer
+
+[teamviewer.gpd]
+CopyFiles=@teamviewer.gpd
+DataSection=UNIDRV_DATA
+Include=NTPRINT.INF
+Needs=UNIDRV.OEM
+
+[SourceDisksFiles]
+teamviewer.gpd = 1
+
+[SourceDisksNames]
+1 = ,,,\
+
+[SourceDisksNames.amd64]
+1 = ,,,\
+
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[Strings]
+PrinterClassName="Printers"
+MS="TeamViewer"
