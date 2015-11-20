@@ -1,0 +1,47 @@
+*** homes/kaltenbe/Devel/openair/openair_branches/openair_lte/openair2/RRC/LITE/MESSAGES/asn1c/asn1c/skeletons/xer_encoder.c	2011-04-11 18:03:26.000000000 +0200
+--- xer_encoder.c	2011-05-31 10:28:26.000000000 +0200
+***************
+*** 3,10 ****
+   * Redistribution and modifications are permitted subject to BSD license.
+   */
+  #include <asn_internal.h>
+! #include <stdio.h>
+! #include <errno.h>
+  
+  /*
+   * The XER encoder of any type. May be invoked by the application.
+--- 3,10 ----
+   * Redistribution and modifications are permitted subject to BSD license.
+   */
+  #include <asn_internal.h>
+! //#include <stdio.h>
+! //#include <errno.h>
+  
+  /*
+   * The XER encoder of any type. May be invoked by the application.
+***************
+*** 41,46 ****
+   * This is a helper function for xer_fprint, which directs all incoming data
+   * into the provided file descriptor.
+   */
+  static int
+  xer__print2fp(const void *buffer, size_t size, void *app_key) {
+  	FILE *stream = (FILE *)app_key;
+--- 41,47 ----
+   * This is a helper function for xer_fprint, which directs all incoming data
+   * into the provided file descriptor.
+   */
++ #ifdef USER_MODE
+  static int
+  xer__print2fp(const void *buffer, size_t size, void *app_key) {
+  	FILE *stream = (FILE *)app_key;
+***************
+*** 65,67 ****
+  
+  	return fflush(stream);
+  }
+--- 66,69 ----
+  
+  	return fflush(stream);
+  }
++ #endif

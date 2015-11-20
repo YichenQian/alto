@@ -1,0 +1,51 @@
+*** homes/kaltenbe/Devel/openair/openair_branches/openair_lte/openair2/RRC/LITE/MESSAGES/asn1c/asn1c/skeletons/ber_tlv_tag.c	2011-03-31 10:22:56.000000000 +0200
+--- ber_tlv_tag.c	2011-05-31 10:28:26.000000000 +0200
+***************
+*** 4,10 ****
+   */
+  #include <asn_internal.h>
+  #include <ber_tlv_tag.h>
+- #include <errno.h>
+  
+  ssize_t
+  ber_fetch_tag(const void *ptr, size_t size, ber_tlv_tag_t *tag_r) {
+--- 4,9 ----
+   */
+  #include <asn_internal.h>
+  #include <ber_tlv_tag.h>
+  
+  ssize_t
+  ber_fetch_tag(const void *ptr, size_t size, ber_tlv_tag_t *tag_r) {
+***************
+*** 57,63 ****
+  	return 0;	/* Want more */
+  }
+  
+! 
+  ssize_t
+  ber_tlv_tag_fwrite(ber_tlv_tag_t tag, FILE *f) {
+  	char buf[sizeof("[APPLICATION ]") + 32];
+--- 56,62 ----
+  	return 0;	/* Want more */
+  }
+  
+! #ifdef USER_MODE
+  ssize_t
+  ber_tlv_tag_fwrite(ber_tlv_tag_t tag, FILE *f) {
+  	char buf[sizeof("[APPLICATION ]") + 32];
+***************
+*** 71,76 ****
+  
+  	return fwrite(buf, 1, ret, f);
+  }
+  
+  ssize_t
+  ber_tlv_tag_snprint(ber_tlv_tag_t tag, char *buf, size_t size) {
+--- 70,76 ----
+  
+  	return fwrite(buf, 1, ret, f);
+  }
++ #endif
+  
+  ssize_t
+  ber_tlv_tag_snprint(ber_tlv_tag_t tag, char *buf, size_t size) {

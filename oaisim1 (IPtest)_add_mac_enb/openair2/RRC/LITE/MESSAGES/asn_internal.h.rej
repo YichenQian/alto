@@ -1,0 +1,113 @@
+*** homes/kaltenbe/Devel/openair/openair_branches/openair_lte/openair2/RRC/LITE/MESSAGES/asn1c/asn1c/skeletons/asn_internal.h	2011-03-31 10:22:57.000000000 +0200
+--- asn_internal.h	2011-05-31 10:28:26.000000000 +0200
+***************
+*** 10,20 ****
+  #define	_ASN_INTERNAL_H_
+  
+  #include "asn_application.h"	/* Application-visible API */
+  
+  #ifndef	__NO_ASSERT_H__		/* Include assert.h only for internal use. */
+  #include <assert.h>		/* for assert() macro */
+  #endif
+  
+  #ifdef	__cplusplus
+  extern "C" {
+  #endif
+--- 10,31 ----
+  #define	_ASN_INTERNAL_H_
+  
+  #include "asn_application.h"	/* Application-visible API */
++ #ifndef USER_MODE
++ #include <rtai.h>
++ #include <rtai_malloc.h>
++ #include "rtai_mem.h"
++ #endif
+  
+  #ifndef	__NO_ASSERT_H__		/* Include assert.h only for internal use. */
+  #include <assert.h>		/* for assert() macro */
+  #endif
+  
++ #ifndef USER_MODE
++ #ifndef assert
++ #define assert(expr) ((expr) ? (void) 0 : printk("Assertion failed in %s:%d\n", __FILE__, __LINE__))
++ #endif
++ #endif
++ 
+  #ifdef	__cplusplus
+  extern "C" {
+  #endif
+***************
+*** 23,32 ****
+  #define	ASN1C_ENVIRONMENT_VERSION	922	/* Compile-time version */
+  int get_asn1c_environment_version(void);	/* Run-time version */
+  
+  #define	CALLOC(nmemb, size)	calloc(nmemb, size)
+  #define	MALLOC(size)		malloc(size)
+  #define	REALLOC(oldptr, size)	realloc(oldptr, size)
+  #define	FREEMEM(ptr)		free(ptr)
+  
+  /*
+   * A macro for debugging the ASN.1 internals.
+--- 34,51 ----
+  #define	ASN1C_ENVIRONMENT_VERSION	922	/* Compile-time version */
+  int get_asn1c_environment_version(void);	/* Run-time version */
+  
++ #ifdef USER_MODE
+  #define	CALLOC(nmemb, size)	calloc(nmemb, size)
+  #define	MALLOC(size)		malloc(size)
+  #define	REALLOC(oldptr, size)	realloc(oldptr, size)
+  #define	FREEMEM(ptr)		free(ptr)
++ #else
++ #define	CALLOC(nmemb, size)	rt_calloc(nmemb,size)
++ #define	MALLOC(size)		rt_malloc(size)
++ #define	REALLOC(oldptr, size)	rt_realloc(oldptr, size)
++ #define	FREEMEM(ptr)		rt_free(ptr);
++ #endif
++ 
+  
+  /*
+   * A macro for debugging the ASN.1 internals.
+***************
+*** 38,45 ****
+  #ifdef	ASN_THREAD_SAFE
+  #define	asn_debug_indent	0
+  #else	/* !ASN_THREAD_SAFE */
+! int asn_debug_indent;
+  #endif	/* ASN_THREAD_SAFE */
+  #define	ASN_DEBUG(fmt, args...)	do {			\
+  		int adi = asn_debug_indent;		\
+  		while(adi--) fprintf(stderr, " ");	\
+--- 57,65 ----
+  #ifdef	ASN_THREAD_SAFE
+  #define	asn_debug_indent	0
+  #else	/* !ASN_THREAD_SAFE */
+! extern int asn_debug_indent;
+  #endif	/* ASN_THREAD_SAFE */
++ #ifdef USER_MODE
+  #define	ASN_DEBUG(fmt, args...)	do {			\
+  		int adi = asn_debug_indent;		\
+  		while(adi--) fprintf(stderr, " ");	\
+***************
+*** 47,52 ****
+  		fprintf(stderr, " (%s:%d)\n",		\
+  			__FILE__, __LINE__);		\
+  	} while(0)
+  #else	/* !__GNUC__ */
+  void ASN_DEBUG_f(const char *fmt, ...);
+  #define	ASN_DEBUG	ASN_DEBUG_f
+--- 67,81 ----
+  		fprintf(stderr, " (%s:%d)\n",		\
+  			__FILE__, __LINE__);		\
+  	} while(0)
++ #else
++ #define ASN_DEBUG(fmt, args...) do {			\
++ 		int adi = asn_debug_indent;		\
++ 		while(adi--) printk(" ");	\
++ 		printk(fmt, ##args);			\
++ 		printk(" (%s:%d)\n",			\
++ 			__FILE__, __LINE__);		\
++ 	} while(0)
++ #endif
+  #else	/* !__GNUC__ */
+  void ASN_DEBUG_f(const char *fmt, ...);
+  #define	ASN_DEBUG	ASN_DEBUG_f

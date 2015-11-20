@@ -1,0 +1,35 @@
+*** homes/kaltenbe/Devel/openair/openair_branches/openair_lte/openair2/RRC/LITE/MESSAGES/asn1c/asn1c/skeletons/asn_SET_OF.c	2011-03-31 10:22:56.000000000 +0200
+--- asn_SET_OF.c	2011-05-31 10:28:26.000000000 +0200
+***************
+*** 4,10 ****
+   */
+  #include <asn_internal.h>
+  #include <asn_SET_OF.h>
+- #include <errno.h>
+  
+  /*
+   * Add another element into the set.
+--- 4,9 ----
+   */
+  #include <asn_internal.h>
+  #include <asn_SET_OF.h>
+  
+  /*
+   * Add another element into the set.
+***************
+*** 21,26 ****
+  	/*
+  	 * Make sure there's enough space to insert an element.
+  	 */
+  	if(as->count == as->size) {
+  		int _newsize = as->size ? (as->size << 1) : 4;
+  		void *_new_arr;
+--- 20,27 ----
+  	/*
+  	 * Make sure there's enough space to insert an element.
+  	 */
++ 	ASN_DEBUG("SET ADD: count %d, size %d",as->count,as->size);
++ 
+  	if(as->count == as->size) {
+  		int _newsize = as->size ? (as->size << 1) : 4;
+  		void *_new_arr;

@@ -1,0 +1,3824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="administrator"
+                   displayName="administrator"
+                   projectFiles="true"
+                   root="../..">
+      <itemPath>../../oaisim.c</itemPath>
+    </logicalFolder>
+    <df root="." name="0">
+      <df name="openair1">
+        <df name="PHY">
+          <df name="CODING">
+            <in>3gpplte.c</in>
+            <in>3gpplte_turbo_decoder.c</in>
+            <in>3gpplte_turbo_decoder_sse.c</in>
+            <in>ccoding_byte.c</in>
+            <in>ccoding_byte_lte.c</in>
+            <in>crc_byte.c</in>
+            <in>lte_rate_matching.c</in>
+            <in>lte_segmentation.c</in>
+            <in>rate_matching.c</in>
+            <in>viterbi.c</in>
+            <in>viterbi_lte.c</in>
+          </df>
+          <df name="INIT">
+            <in>init_top.c</in>
+            <in>lte_init.c</in>
+            <in>lte_parms.c</in>
+          </df>
+          <df name="LTE_ESTIMATION">
+            <in>adjust_gain.c</in>
+            <in>freq_equalization.c</in>
+            <in>lte_adjust_sync.c</in>
+            <in>lte_dl_channel_estimation.c</in>
+            <in>lte_eNB_measurements.c</in>
+            <in>lte_est_freq_offset.c</in>
+            <in>lte_sync_time.c</in>
+            <in>lte_ue_measurements.c</in>
+            <in>lte_ul_channel_estimation.c</in>
+          </df>
+          <df name="LTE_REFSIG">
+            <in>lte_dl_cell_spec.c</in>
+            <in>lte_dl_mbsfn.c</in>
+            <in>lte_gold.c</in>
+            <in>lte_gold_mbsfn.c</in>
+            <in>lte_ul_ref.c</in>
+          </df>
+          <df name="LTE_TRANSPORT">
+            <in>dci.c</in>
+            <in>dci_tools.c</in>
+            <in>dlsch_coding.c</in>
+            <in>dlsch_decoding.c</in>
+            <in>dlsch_demodulation.c</in>
+            <in>dlsch_llr_computation.c</in>
+            <in>dlsch_modulation.c</in>
+            <in>dlsch_scrambling.c</in>
+            <in>drs_modulation.c</in>
+            <in>group_hopping.c</in>
+            <in>initial_sync.c</in>
+            <in>lte_mcs.c</in>
+            <in>pbch.c</in>
+            <in>pcfich.c</in>
+            <in>phich.c</in>
+            <in>pilots.c</in>
+            <in>power_control.c</in>
+            <in>prach.c</in>
+            <in>print_stats.c</in>
+            <in>pss.c</in>
+            <in>pucch.c</in>
+            <in>rar_tools.c</in>
+            <in>srs_modulation.c</in>
+            <in>sss.c</in>
+            <in>uci_tools.c</in>
+            <in>ulsch_coding.c</in>
+            <in>ulsch_decoding.c</in>
+            <in>ulsch_demodulation.c</in>
+            <in>ulsch_modulation.c</in>
+          </df>
+          <df name="MODULATION">
+            <in>ofdm_mod.c</in>
+            <in>slot_fep.c</in>
+            <in>slot_fep_ul.c</in>
+            <in>ul_7_5_kHz.c</in>
+          </df>
+          <df name="TOOLS">
+            <in>cadd_vv.c</in>
+            <in>cdot_prod.c</in>
+            <in>cmult_sv.c</in>
+            <in>cmult_vv.c</in>
+            <in>dB_routines.c</in>
+            <in>fft.c</in>
+            <in>file_output.c</in>
+            <in>log2_approx.c</in>
+            <in>lte_dfts.c</in>
+            <in>signal_energy.c</in>
+            <in>sqrt.c</in>
+          </df>
+        </df>
+        <df name="SCHED">
+          <in>phy_procedures_lte_common.c</in>
+          <in>phy_procedures_lte_eNb.c</in>
+          <in>phy_procedures_lte_ue.c</in>
+          <in>pucch_pc.c</in>
+          <in>pusch_pc.c</in>
+        </df>
+        <df name="SIMULATION">
+          <df name="ETH_TRANSPORT">
+            <in>bypass_session_layer.c</in>
+            <in>emu_transport.c</in>
+            <in>multicast_link.c</in>
+            <in>netlink_init.c</in>
+            <in>socket.c</in>
+          </df>
+          <df name="RF">
+            <in>adc.c</in>
+            <in>dac.c</in>
+            <in>rf.c</in>
+          </df>
+          <df name="TOOLS">
+            <in>abstraction.c</in>
+            <in>gauss.c</in>
+            <in>multipath_channel.c</in>
+            <in>random_channel.c</in>
+            <in>rangen_double.c</in>
+            <in>taus.c</in>
+          </df>
+        </df>
+      </df>
+      <df name="openair2">
+        <df name="LAYER2">
+          <df name="MAC">
+            <in>config.c</in>
+            <in>eNB_scheduler.c</in>
+            <in>l1_helpers.c</in>
+            <in>lte_transport_init.c</in>
+            <in>main.c</in>
+            <in>ra_procedures.c</in>
+            <in>rar_tools.c</in>
+            <in>ue_procedures.c</in>
+          </df>
+          <df name="PDCP_v10.1.0">
+            <in>pdcp.c</in>
+            <in>pdcp_fifo.c</in>
+            <in>pdcp_primitives.c</in>
+            <in>pdcp_sequence_manager.c</in>
+            <in>pdcp_util.c</in>
+          </df>
+          <df name="RLC">
+            <df name="AM_v9.3.0">
+              <in>rlc_am.c</in>
+              <in>rlc_am_in_sdu.c</in>
+              <in>rlc_am_init.c</in>
+              <in>rlc_am_reassembly.c</in>
+              <in>rlc_am_receiver.c</in>
+              <in>rlc_am_retransmit.c</in>
+              <in>rlc_am_rx_list.c</in>
+              <in>rlc_am_segment.c</in>
+              <in>rlc_am_segments_holes.c</in>
+              <in>rlc_am_status_report.c</in>
+              <in>rlc_am_timer_poll_retransmit.c</in>
+              <in>rlc_am_timer_reordering.c</in>
+              <in>rlc_am_timer_status_prohibit.c</in>
+              <in>rlc_am_windows.c</in>
+            </df>
+            <df name="TM_v9.3.0">
+              <in>rlc_tm.c</in>
+              <in>rlc_tm_init.c</in>
+            </df>
+            <df name="UM_v9.3.0">
+              <in>rlc_um.c</in>
+              <in>rlc_um_control_primitives.c</in>
+              <in>rlc_um_dar.c</in>
+              <in>rlc_um_fsm.c</in>
+              <in>rlc_um_reassembly.c</in>
+              <in>rlc_um_receiver.c</in>
+              <in>rlc_um_segment.c</in>
+              <in>rlc_um_very_simple_test.c</in>
+            </df>
+            <in>rlc.c</in>
+            <in>rlc_mac.c</in>
+            <in>rlc_mpls.c</in>
+            <in>rlc_rrc.c</in>
+          </df>
+        </df>
+        <df name="RRC">
+          <df name="L2_INTERFACE">
+            <in>openair_rrc_L2_interface.c</in>
+          </df>
+          <df name="LITE">
+            <df name="MESSAGES">
+              <in>AC-BarringConfig.c</in>
+              <in>ARFCN-ValueCDMA2000.c</in>
+              <in>ARFCN-ValueEUTRA.c</in>
+              <in>ARFCN-ValueGERAN.c</in>
+              <in>ARFCN-ValueUTRA.c</in>
+              <in>AccessStratumRelease.c</in>
+              <in>AdditionalSpectrumEmission.c</in>
+              <in>AllowedMeasBandwidth.c</in>
+              <in>AntennaInfoCommon.c</in>
+              <in>AntennaInfoDedicated.c</in>
+              <in>BCCH-BCH-Message.c</in>
+              <in>BCCH-BCH-MessageType.c</in>
+              <in>BCCH-Config.c</in>
+              <in>BCCH-DL-SCH-Message.c</in>
+              <in>BCCH-DL-SCH-MessageType.c</in>
+              <in>BIT_STRING.c</in>
+              <in>BOOLEAN.c</in>
+              <in>BandClassInfoCDMA2000.c</in>
+              <in>BandClassListCDMA2000.c</in>
+              <in>BandClassPriority1XRTT.c</in>
+              <in>BandClassPriorityHRPD.c</in>
+              <in>BandClassPriorityList1XRTT.c</in>
+              <in>BandClassPriorityListHRPD.c</in>
+              <in>BandIndicatorGERAN.c</in>
+              <in>BandInfoEUTRA.c</in>
+              <in>BandListEUTRA.c</in>
+              <in>BandclassCDMA2000.c</in>
+              <in>BlackCellsToAddMod.c</in>
+              <in>BlackCellsToAddModList.c</in>
+              <in>C-RNTI.c</in>
+              <in>CDMA2000-Type.c</in>
+              <in>CQI-ReportConfig.c</in>
+              <in>CQI-ReportPeriodic.c</in>
+              <in>CSFB-RegistrationParam1XRTT.c</in>
+              <in>CSFBParametersRequestCDMA2000-r8-IEs.c</in>
+              <in>CSFBParametersRequestCDMA2000.c</in>
+              <in>CSFBParametersResponseCDMA2000-r8-IEs.c</in>
+              <in>CSFBParametersResponseCDMA2000.c</in>
+              <in>CarrierBandwidthEUTRA.c</in>
+              <in>CarrierFreqCDMA2000.c</in>
+              <in>CarrierFreqEUTRA.c</in>
+              <in>CarrierFreqGERAN.c</in>
+              <in>CarrierFreqListUTRA-FDD.c</in>
+              <in>CarrierFreqListUTRA-TDD.c</in>
+              <in>CarrierFreqUTRA-FDD.c</in>
+              <in>CarrierFreqUTRA-TDD.c</in>
+              <in>CarrierFreqsGERAN.c</in>
+              <in>CarrierFreqsInfoGERAN.c</in>
+              <in>CarrierFreqsInfoListGERAN.c</in>
+              <in>CellChangeOrder.c</in>
+              <in>CellGlobalIdCDMA2000.c</in>
+              <in>CellGlobalIdEUTRA.c</in>
+              <in>CellGlobalIdGERAN.c</in>
+              <in>CellGlobalIdUTRA.c</in>
+              <in>CellIdentity.c</in>
+              <in>CellIndex.c</in>
+              <in>CellIndexList.c</in>
+              <in>CellReselectionParametersCDMA2000.c</in>
+              <in>CellReselectionPriority.c</in>
+              <in>CellsToAddMod.c</in>
+              <in>CellsToAddModCDMA2000.c</in>
+              <in>CellsToAddModList.c</in>
+              <in>CellsToAddModListCDMA2000.c</in>
+              <in>CellsToAddModListUTRA-FDD.c</in>
+              <in>CellsToAddModListUTRA-TDD.c</in>
+              <in>CellsToAddModUTRA-FDD.c</in>
+              <in>CellsToAddModUTRA-TDD.c</in>
+              <in>CounterCheck-r8-IEs.c</in>
+              <in>CounterCheck.c</in>
+              <in>CounterCheckResponse-r8-IEs.c</in>
+              <in>CounterCheckResponse.c</in>
+              <in>DL-AM-RLC.c</in>
+              <in>DL-CCCH-Message.c</in>
+              <in>DL-CCCH-MessageType.c</in>
+              <in>DL-DCCH-Message.c</in>
+              <in>DL-DCCH-MessageType.c</in>
+              <in>DL-UM-RLC.c</in>
+              <in>DLInformationTransfer-r8-IEs.c</in>
+              <in>DLInformationTransfer.c</in>
+              <in>DRB-CountInfo.c</in>
+              <in>DRB-CountInfoList.c</in>
+              <in>DRB-CountMSB-Info.c</in>
+              <in>DRB-CountMSB-InfoList.c</in>
+              <in>DRB-Identity.c</in>
+              <in>DRB-ToAddMod.c</in>
+              <in>DRB-ToAddModList.c</in>
+              <in>DRB-ToReleaseList.c</in>
+              <in>DRX-Config.c</in>
+              <in>DedicatedInfoCDMA2000.c</in>
+              <in>DedicatedInfoNAS.c</in>
+              <in>DeltaFList-PUCCH.c</in>
+              <in>EstablishmentCause.c</in>
+              <in>ExplicitListOfARFCNs.c</in>
+              <in>FilterCoefficient.c</in>
+              <in>FreqPriorityEUTRA.c</in>
+              <in>FreqPriorityListEUTRA.c</in>
+              <in>FreqPriorityListUTRA-FDD.c</in>
+              <in>FreqPriorityListUTRA-TDD.c</in>
+              <in>FreqPriorityUTRA-FDD.c</in>
+              <in>FreqPriorityUTRA-TDD.c</in>
+              <in>FreqsPriorityGERAN.c</in>
+              <in>FreqsPriorityListGERAN.c</in>
+              <in>Handover.c</in>
+              <in>HandoverFromEUTRAPreparationRequest-r8-IEs.c</in>
+              <in>HandoverFromEUTRAPreparationRequest.c</in>
+              <in>Hysteresis.c</in>
+              <in>IMSI-Digit.c</in>
+              <in>IMSI.c</in>
+              <in>INTEGER.c</in>
+              <in>IRAT-ParametersCDMA2000-1XRTT.c</in>
+              <in>IRAT-ParametersCDMA2000-HRPD.c</in>
+              <in>IRAT-ParametersGERAN.c</in>
+              <in>IRAT-ParametersUTRA-FDD.c</in>
+              <in>IRAT-ParametersUTRA-TDD128.c</in>
+              <in>IRAT-ParametersUTRA-TDD384.c</in>
+              <in>IRAT-ParametersUTRA-TDD768.c</in>
+              <in>IdleModeMobilityControlInfo.c</in>
+              <in>InitialUE-Identity.c</in>
+              <in>InterFreqBandInfo.c</in>
+              <in>InterFreqBandList.c</in>
+              <in>InterFreqBlackCellList.c</in>
+              <in>InterFreqCarrierFreqInfo.c</in>
+              <in>InterFreqCarrierFreqList.c</in>
+              <in>InterFreqNeighCellInfo.c</in>
+              <in>InterFreqNeighCellList.c</in>
+              <in>InterRAT-BandInfo.c</in>
+              <in>InterRAT-BandList.c</in>
+              <in>IntraFreqBlackCellList.c</in>
+              <in>IntraFreqNeighCellInfo.c</in>
+              <in>IntraFreqNeighCellList.c</in>
+              <in>LogicalChannelConfig.c</in>
+              <in>MAC-MainConfig.c</in>
+              <in>MBSFN-SubframeConfig.c</in>
+              <in>MBSFN-SubframeConfigList.c</in>
+              <in>MCC-MNC-Digit.c</in>
+              <in>MCC.c</in>
+              <in>MMEC.c</in>
+              <in>MNC.c</in>
+              <in>MasterInformationBlock.c</in>
+              <in>MeasConfig.c</in>
+              <in>MeasGapConfig.c</in>
+              <in>MeasId.c</in>
+              <in>MeasIdToAddMod.c</in>
+              <in>MeasIdToAddModList.c</in>
+              <in>MeasIdToRemoveList.c</in>
+              <in>MeasObjectCDMA2000.c</in>
+              <in>MeasObjectEUTRA.c</in>
+              <in>MeasObjectGERAN.c</in>
+              <in>MeasObjectId.c</in>
+              <in>MeasObjectToAddMod.c</in>
+              <in>MeasObjectToAddModList.c</in>
+              <in>MeasObjectToRemoveList.c</in>
+              <in>MeasObjectUTRA.c</in>
+              <in>MeasParameters.c</in>
+              <in>MeasResultCDMA2000.c</in>
+              <in>MeasResultEUTRA.c</in>
+              <in>MeasResultGERAN.c</in>
+              <in>MeasResultListCDMA2000.c</in>
+              <in>MeasResultListEUTRA.c</in>
+              <in>MeasResultListGERAN.c</in>
+              <in>MeasResultListUTRA.c</in>
+              <in>MeasResultUTRA.c</in>
+              <in>MeasResults.c</in>
+              <in>MeasResultsCDMA2000.c</in>
+              <in>MeasurementReport-r8-IEs.c</in>
+              <in>MeasurementReport.c</in>
+              <in>MobilityControlInfo.c</in>
+              <in>MobilityFromEUTRACommand-r8-IEs.c</in>
+              <in>MobilityFromEUTRACommand.c</in>
+              <in>MobilityParametersCDMA2000.c</in>
+              <in>MobilityStateParameters.c</in>
+              <in>N1-PUCCH-AN-PersistentList.c</in>
+              <in>NULL.c</in>
+              <in>NativeEnumerated.c</in>
+              <in>NativeInteger.c</in>
+              <in>NeighCellCDMA2000.c</in>
+              <in>NeighCellConfig.c</in>
+              <in>NeighCellListCDMA2000.c</in>
+              <in>NeighCellsPerBandclassCDMA2000.c</in>
+              <in>NeighCellsPerBandclassListCDMA2000.c</in>
+              <in>NextHopChainingCount.c</in>
+              <in>OCTET_STRING.c</in>
+              <in>P-Max.c</in>
+              <in>PCCH-Config.c</in>
+              <in>PCCH-Message.c</in>
+              <in>PCCH-MessageType.c</in>
+              <in>PDCP-Config.c</in>
+              <in>PDCP-Parameters.c</in>
+              <in>PDSCH-ConfigCommon.c</in>
+              <in>PDSCH-ConfigDedicated.c</in>
+              <in>PHICH-Config.c</in>
+              <in>PLMN-Identity.c</in>
+              <in>PLMN-IdentityInfo.c</in>
+              <in>PLMN-IdentityList.c</in>
+              <in>PLMN-IdentityList2.c</in>
+              <in>PRACH-Config.c</in>
+              <in>PRACH-ConfigInfo.c</in>
+              <in>PRACH-ConfigSIB.c</in>
+              <in>PUCCH-ConfigCommon.c</in>
+              <in>PUCCH-ConfigDedicated.c</in>
+              <in>PUSCH-ConfigCommon.c</in>
+              <in>PUSCH-ConfigDedicated.c</in>
+              <in>Paging.c</in>
+              <in>PagingRecord.c</in>
+              <in>PagingRecordList.c</in>
+              <in>PagingUE-Identity.c</in>
+              <in>PhyLayerParameters.c</in>
+              <in>PhysCellId.c</in>
+              <in>PhysCellIdCDMA2000.c</in>
+              <in>PhysCellIdGERAN.c</in>
+              <in>PhysCellIdListCDMA2000.c</in>
+              <in>PhysCellIdRange.c</in>
+              <in>PhysCellIdUTRA-FDD.c</in>
+              <in>PhysCellIdUTRA-TDD.c</in>
+              <in>PhysicalConfigDedicated.c</in>
+              <in>PollByte.c</in>
+              <in>PollPDU.c</in>
+              <in>PreRegistrationInfoHRPD.c</in>
+              <in>PreRegistrationZoneIdHRPD.c</in>
+              <in>PresenceAntennaPort1.c</in>
+              <in>Q-OffsetRange.c</in>
+              <in>Q-OffsetRangeInterRAT.c</in>
+              <in>Q-RxLevMin.c</in>
+              <in>QuantityConfig.c</in>
+              <in>QuantityConfigCDMA2000.c</in>
+              <in>QuantityConfigEUTRA.c</in>
+              <in>QuantityConfigGERAN.c</in>
+              <in>QuantityConfigUTRA.c</in>
+              <in>RACH-ConfigCommon.c</in>
+              <in>RACH-ConfigDedicated.c</in>
+              <in>RAND-CDMA2000.c</in>
+              <in>RAT-Type.c</in>
+              <in>RF-Parameters.c</in>
+              <in>RLC-Config.c</in>
+              <in>RRC-TransactionIdentifier.c</in>
+              <in>RRCConnectionReconfiguration-r8-IEs.c</in>
+              <in>RRCConnectionReconfiguration.c</in>
+              <in>RRCConnectionReconfigurationComplete-r8-IEs.c</in>
+              <in>RRCConnectionReconfigurationComplete.c</in>
+              <in>RRCConnectionReestablishment-r8-IEs.c</in>
+              <in>RRCConnectionReestablishment.c</in>
+              <in>RRCConnectionReestablishmentComplete-r8-IEs.c</in>
+              <in>RRCConnectionReestablishmentComplete.c</in>
+              <in>RRCConnectionReestablishmentReject-r8-IEs.c</in>
+              <in>RRCConnectionReestablishmentReject.c</in>
+              <in>RRCConnectionReestablishmentRequest-r8-IEs.c</in>
+              <in>RRCConnectionReestablishmentRequest.c</in>
+              <in>RRCConnectionReject-r8-IEs.c</in>
+              <in>RRCConnectionReject.c</in>
+              <in>RRCConnectionRelease-r8-IEs.c</in>
+              <in>RRCConnectionRelease.c</in>
+              <in>RRCConnectionRequest-r8-IEs.c</in>
+              <in>RRCConnectionRequest.c</in>
+              <in>RRCConnectionSetup-r8-IEs.c</in>
+              <in>RRCConnectionSetup.c</in>
+              <in>RRCConnectionSetupComplete-r8-IEs.c</in>
+              <in>RRCConnectionSetupComplete.c</in>
+              <in>RSRP-Range.c</in>
+              <in>RSRQ-Range.c</in>
+              <in>RadioResourceConfigCommon.c</in>
+              <in>RadioResourceConfigCommonSIB.c</in>
+              <in>RadioResourceConfigDedicated.c</in>
+              <in>RedirectedCarrierInfo.c</in>
+              <in>ReestabUE-Identity.c</in>
+              <in>ReestablishmentCause.c</in>
+              <in>RegisteredMME.c</in>
+              <in>ReleaseCause.c</in>
+              <in>ReportConfigEUTRA.c</in>
+              <in>ReportConfigId.c</in>
+              <in>ReportConfigInterRAT.c</in>
+              <in>ReportConfigToAddMod.c</in>
+              <in>ReportConfigToAddModList.c</in>
+              <in>ReportConfigToRemoveList.c</in>
+              <in>ReportInterval.c</in>
+              <in>ReselectionThreshold.c</in>
+              <in>S-TMSI.c</in>
+              <in>SI-OrPSI-GERAN.c</in>
+              <in>SIB-MappingInfo.c</in>
+              <in>SIB-Type.c</in>
+              <in>SN-FieldLength.c</in>
+              <in>SPS-Config.c</in>
+              <in>SPS-ConfigDL.c</in>
+              <in>SPS-ConfigUL.c</in>
+              <in>SRB-ToAddMod.c</in>
+              <in>SRB-ToAddModList.c</in>
+              <in>SchedulingInfo.c</in>
+              <in>SchedulingInfoList.c</in>
+              <in>SchedulingRequestConfig.c</in>
+              <in>SecondaryPreRegistrationZoneIdListHRPD.c</in>
+              <in>SecurityAlgorithmConfig.c</in>
+              <in>SecurityConfigHO.c</in>
+              <in>SecurityConfigSMC.c</in>
+              <in>SecurityModeCommand-r8-IEs.c</in>
+              <in>SecurityModeCommand.c</in>
+              <in>SecurityModeComplete-r8-IEs.c</in>
+              <in>SecurityModeComplete.c</in>
+              <in>SecurityModeFailure-r8-IEs.c</in>
+              <in>SecurityModeFailure.c</in>
+              <in>ShortMAC-I.c</in>
+              <in>SoundingRS-UL-ConfigCommon.c</in>
+              <in>SoundingRS-UL-ConfigDedicated.c</in>
+              <in>SpeedStateScaleFactors.c</in>
+              <in>SupportedBandEUTRA.c</in>
+              <in>SupportedBandGERAN.c</in>
+              <in>SupportedBandList1XRTT.c</in>
+              <in>SupportedBandListEUTRA.c</in>
+              <in>SupportedBandListGERAN.c</in>
+              <in>SupportedBandListHRPD.c</in>
+              <in>SupportedBandListUTRA-FDD.c</in>
+              <in>SupportedBandListUTRA-TDD128.c</in>
+              <in>SupportedBandListUTRA-TDD384.c</in>
+              <in>SupportedBandListUTRA-TDD768.c</in>
+              <in>SupportedBandUTRA-FDD.c</in>
+              <in>SupportedBandUTRA-TDD128.c</in>
+              <in>SupportedBandUTRA-TDD384.c</in>
+              <in>SupportedBandUTRA-TDD768.c</in>
+              <in>SystemInfoListGERAN.c</in>
+              <in>SystemInformation-r8-IEs.c</in>
+              <in>SystemInformation.c</in>
+              <in>SystemInformationBlockType1.c</in>
+              <in>SystemInformationBlockType10.c</in>
+              <in>SystemInformationBlockType11.c</in>
+              <in>SystemInformationBlockType2.c</in>
+              <in>SystemInformationBlockType3.c</in>
+              <in>SystemInformationBlockType4.c</in>
+              <in>SystemInformationBlockType5.c</in>
+              <in>SystemInformationBlockType6.c</in>
+              <in>SystemInformationBlockType7.c</in>
+              <in>SystemInformationBlockType8.c</in>
+              <in>SystemInformationBlockType9.c</in>
+              <in>SystemTimeInfoCDMA2000.c</in>
+              <in>T-PollRetransmit.c</in>
+              <in>T-Reordering.c</in>
+              <in>T-Reselection.c</in>
+              <in>T-StatusProhibit.c</in>
+              <in>TDD-Config.c</in>
+              <in>TPC-Index.c</in>
+              <in>TPC-PDCCH-Config.c</in>
+              <in>ThresholdCDMA2000.c</in>
+              <in>ThresholdEUTRA.c</in>
+              <in>ThresholdGERAN.c</in>
+              <in>ThresholdUTRA.c</in>
+              <in>TimeAlignmentTimer.c</in>
+              <in>TimeToTrigger.c</in>
+              <in>TrackingAreaCode.c</in>
+              <in>UE-CapabilityRAT-Container.c</in>
+              <in>UE-CapabilityRAT-ContainerList.c</in>
+              <in>UE-CapabilityRequest.c</in>
+              <in>UE-EUTRA-Capability.c</in>
+              <in>UE-TimersAndConstants.c</in>
+              <in>UECapabilityEnquiry-r8-IEs.c</in>
+              <in>UECapabilityEnquiry.c</in>
+              <in>UECapabilityInformation-r8-IEs.c</in>
+              <in>UECapabilityInformation.c</in>
+              <in>UL-AM-RLC.c</in>
+              <in>UL-CCCH-Message.c</in>
+              <in>UL-CCCH-MessageType.c</in>
+              <in>UL-CyclicPrefixLength.c</in>
+              <in>UL-DCCH-Message.c</in>
+              <in>UL-DCCH-MessageType.c</in>
+              <in>UL-ReferenceSignalsPUSCH.c</in>
+              <in>UL-UM-RLC.c</in>
+              <in>ULHandoverPreparationTransfer-r8-IEs.c</in>
+              <in>ULHandoverPreparationTransfer.c</in>
+              <in>ULInformationTransfer-r8-IEs.c</in>
+              <in>ULInformationTransfer.c</in>
+              <in>UplinkPowerControlCommon.c</in>
+              <in>UplinkPowerControlDedicated.c</in>
+              <in>asn1_msg.c</in>
+              <in>asn_SEQUENCE_OF.c</in>
+              <in>asn_SET_OF.c</in>
+              <in>asn_codecs_prim.c</in>
+              <in>ber_decoder.c</in>
+              <in>ber_tlv_length.c</in>
+              <in>ber_tlv_tag.c</in>
+              <in>constr_CHOICE.c</in>
+              <in>constr_SEQUENCE.c</in>
+              <in>constr_SEQUENCE_OF.c</in>
+              <in>constr_SET_OF.c</in>
+              <in>constr_TYPE.c</in>
+              <in>constraints.c</in>
+              <in>der_encoder.c</in>
+              <in>per_decoder.c</in>
+              <in>per_encoder.c</in>
+              <in>per_opentype.c</in>
+              <in>per_support.c</in>
+              <in>xer_decoder.c</in>
+              <in>xer_encoder.c</in>
+              <in>xer_support.c</in>
+            </df>
+            <in>L2_interface.c</in>
+            <in>rrc_UE.c</in>
+            <in>rrc_common.c</in>
+            <in>rrc_eNB.c</in>
+          </df>
+          <df name="NAS">
+            <in>nas_config.c</in>
+            <in>rb_config.c</in>
+          </df>
+        </df>
+        <df name="UTIL">
+          <df name="CLI">
+            <in>cli.c</in>
+            <in>cli_cmd.c</in>
+            <in>cli_server.c</in>
+          </df>
+          <df name="LISTS">
+            <in>list.c</in>
+            <in>list2.c</in>
+          </df>
+          <df name="LOG">
+            <in>log.c</in>
+            <in>vcd_signal_dumper.c</in>
+          </df>
+          <df name="MATH">
+            <in>oml.c</in>
+          </df>
+          <df name="MEM">
+            <in>mem_block.c</in>
+          </df>
+          <df name="OCG">
+            <in>OCG.c</in>
+            <in>OCG_create_dir.c</in>
+            <in>OCG_detect_file.c</in>
+            <in>OCG_generate_report.c</in>
+            <in>OCG_parse_XML.c</in>
+            <in>OCG_parse_filename.c</in>
+            <in>OCG_save_XML.c</in>
+          </df>
+          <df name="OMG">
+            <in>client_traci_OMG.c</in>
+            <in>common.c</in>
+            <in>hashtable.c</in>
+            <in>id_manager.c</in>
+            <in>job.c</in>
+            <in>mobility_parser.c</in>
+            <in>omg.c</in>
+            <in>rwalk.c</in>
+            <in>rwp.c</in>
+            <in>socket_traci_OMG.c</in>
+            <in>static.c</in>
+            <in>storage_traci_OMG.c</in>
+            <in>sumo.c</in>
+            <in>trace.c</in>
+          </df>
+          <df name="OPT">
+            <in>probe.c</in>
+          </df>
+          <df name="OTG">
+            <in>otg.c</in>
+            <in>otg_form.c</in>
+            <in>otg_kpi.c</in>
+            <in>otg_rx.c</in>
+            <in>otg_tx.c</in>
+          </df>
+          <df name="TIMER">
+            <in>umts_timer.c</in>
+          </df>
+        </df>
+      </df>
+      <in>channel_sim.c</in>
+      <in>cor_SF_sim.c</in>
+      <in>init_lte.c</in>
+      <in>oaisim.c</in>
+      <in>oaisim123.c</in>
+      <in>oaisim_config.c</in>
+      <in>phy_procedures_sim_form.c</in>
+      <in>sinr_sim.c</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-g -ggdb -m64 -mssse3 -msse4 -g -ggdb"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>oaisim</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="../../oaisim.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="channel_sim.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>.</pElem>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>openair1</pElem>
+            <pElem>openair2</pElem>
+            <pElem>openair2/COMMON</pElem>
+            <pElem>openair2/LAYER2/RLC</pElem>
+            <pElem>openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>openair2/RRC/LITE</pElem>
+            <pElem>openair2/UTIL/MEM</pElem>
+            <pElem>openair2/UTIL/LISTS</pElem>
+            <pElem>openair2/UTIL/OCG</pElem>
+            <pElem>openair2/UTIL/LOG</pElem>
+            <pElem>openair2/UTIL/MATH</pElem>
+            <pElem>openair2/UTIL/TIMER</pElem>
+            <pElem>openair2/UTIL/OMG</pElem>
+            <pElem>openair2/UTIL/OTG</pElem>
+            <pElem>openair2/UTIL/CLI</pElem>
+            <pElem>openair2/UTIL/OPT</pElem>
+            <pElem>openair2/UTIL/OMV</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="cor_SF_sim.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>.</pElem>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>openair1</pElem>
+            <pElem>openair2</pElem>
+            <pElem>openair2/COMMON</pElem>
+            <pElem>openair2/LAYER2/RLC</pElem>
+            <pElem>openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>openair2/RRC/LITE</pElem>
+            <pElem>openair2/UTIL/MEM</pElem>
+            <pElem>openair2/UTIL/LISTS</pElem>
+            <pElem>openair2/UTIL/OCG</pElem>
+            <pElem>openair2/UTIL/LOG</pElem>
+            <pElem>openair2/UTIL/MATH</pElem>
+            <pElem>openair2/UTIL/TIMER</pElem>
+            <pElem>openair2/UTIL/OMG</pElem>
+            <pElem>openair2/UTIL/OTG</pElem>
+            <pElem>openair2/UTIL/CLI</pElem>
+            <pElem>openair2/UTIL/OPT</pElem>
+            <pElem>openair2/UTIL/OMV</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <folder path="0/openair1">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>.</pElem>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>openair1</pElem>
+            <pElem>openair2</pElem>
+            <pElem>openair2/COMMON</pElem>
+            <pElem>openair2/LAYER2/RLC</pElem>
+            <pElem>openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>openair2/RRC/LITE</pElem>
+            <pElem>openair2/UTIL/MEM</pElem>
+            <pElem>openair2/UTIL/LISTS</pElem>
+            <pElem>openair2/UTIL/OCG</pElem>
+            <pElem>openair2/UTIL/LOG</pElem>
+            <pElem>openair2/UTIL/MATH</pElem>
+            <pElem>openair2/UTIL/TIMER</pElem>
+            <pElem>openair2/UTIL/OMG</pElem>
+            <pElem>openair2/UTIL/OTG</pElem>
+            <pElem>openair2/UTIL/CLI</pElem>
+            <pElem>openair2/UTIL/OPT</pElem>
+            <pElem>openair2/UTIL/OMV</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </folder>
+      <folder path="0/openair2">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>.</pElem>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>openair1</pElem>
+            <pElem>openair2</pElem>
+            <pElem>openair2/COMMON</pElem>
+            <pElem>openair2/LAYER2/RLC</pElem>
+            <pElem>openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>openair2/RRC/LITE</pElem>
+            <pElem>openair2/UTIL/MEM</pElem>
+            <pElem>openair2/UTIL/LISTS</pElem>
+            <pElem>openair2/UTIL/OCG</pElem>
+            <pElem>openair2/UTIL/LOG</pElem>
+            <pElem>openair2/UTIL/MATH</pElem>
+            <pElem>openair2/UTIL/TIMER</pElem>
+            <pElem>openair2/UTIL/OMG</pElem>
+            <pElem>openair2/UTIL/OTG</pElem>
+            <pElem>openair2/UTIL/CLI</pElem>
+            <pElem>openair2/UTIL/OPT</pElem>
+            <pElem>openair2/UTIL/OMV</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </folder>
+      <folder path="administrator">
+        <cTool>
+          <incDir>
+            <pElem>../../openair1</pElem>
+            <pElem>../../openair2</pElem>
+            <pElem>../../openair2/COMMON</pElem>
+            <pElem>../../openair2/LAYER2/RLC</pElem>
+            <pElem>../../openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>../../openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>../../openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>../../openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>../../openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>../../openair2/RRC/LITE</pElem>
+            <pElem>../../openair2/UTIL/MEM</pElem>
+            <pElem>../../openair2/UTIL/LISTS</pElem>
+            <pElem>../../openair2/UTIL/OCG</pElem>
+            <pElem>../../openair2/UTIL/LOG</pElem>
+            <pElem>../../openair2/UTIL/MATH</pElem>
+            <pElem>../../openair2/UTIL/TIMER</pElem>
+            <pElem>../../openair2/UTIL/OMG</pElem>
+            <pElem>../../openair2/UTIL/OTG</pElem>
+            <pElem>../../openair2/UTIL/CLI</pElem>
+            <pElem>../../openair2/UTIL/OPT</pElem>
+            <pElem>../../openair2/UTIL/OMV</pElem>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>../..</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </folder>
+      <item path="init_lte.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>.</pElem>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>openair1</pElem>
+            <pElem>openair2</pElem>
+            <pElem>openair2/COMMON</pElem>
+            <pElem>openair2/LAYER2/RLC</pElem>
+            <pElem>openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>openair2/RRC/LITE</pElem>
+            <pElem>openair2/UTIL/MEM</pElem>
+            <pElem>openair2/UTIL/LISTS</pElem>
+            <pElem>openair2/UTIL/OCG</pElem>
+            <pElem>openair2/UTIL/LOG</pElem>
+            <pElem>openair2/UTIL/MATH</pElem>
+            <pElem>openair2/UTIL/TIMER</pElem>
+            <pElem>openair2/UTIL/OMG</pElem>
+            <pElem>openair2/UTIL/OTG</pElem>
+            <pElem>openair2/UTIL/CLI</pElem>
+            <pElem>openair2/UTIL/OPT</pElem>
+            <pElem>openair2/UTIL/OMV</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="oaisim.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openair1</pElem>
+            <pElem>openair2</pElem>
+            <pElem>openair2/COMMON</pElem>
+            <pElem>openair2/LAYER2/RLC</pElem>
+            <pElem>openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>openair2/RRC/LITE</pElem>
+            <pElem>openair2/UTIL/MEM</pElem>
+            <pElem>openair2/UTIL/LISTS</pElem>
+            <pElem>openair2/UTIL/OCG</pElem>
+            <pElem>openair2/UTIL/LOG</pElem>
+            <pElem>openair2/UTIL/MATH</pElem>
+            <pElem>openair2/UTIL/TIMER</pElem>
+            <pElem>openair2/UTIL/OMG</pElem>
+            <pElem>openair2/UTIL/OTG</pElem>
+            <pElem>openair2/UTIL/CLI</pElem>
+            <pElem>openair2/UTIL/OPT</pElem>
+            <pElem>openair2/UTIL/OMV</pElem>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>.</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="oaisim123.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="oaisim_config.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>.</pElem>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>openair1</pElem>
+            <pElem>openair2</pElem>
+            <pElem>openair2/COMMON</pElem>
+            <pElem>openair2/LAYER2/RLC</pElem>
+            <pElem>openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>openair2/RRC/LITE</pElem>
+            <pElem>openair2/UTIL/MEM</pElem>
+            <pElem>openair2/UTIL/LISTS</pElem>
+            <pElem>openair2/UTIL/OCG</pElem>
+            <pElem>openair2/UTIL/LOG</pElem>
+            <pElem>openair2/UTIL/MATH</pElem>
+            <pElem>openair2/UTIL/TIMER</pElem>
+            <pElem>openair2/UTIL/OMG</pElem>
+            <pElem>openair2/UTIL/OTG</pElem>
+            <pElem>openair2/UTIL/CLI</pElem>
+            <pElem>openair2/UTIL/OPT</pElem>
+            <pElem>openair2/UTIL/OMV</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="openair1/PHY/CODING/3gpplte.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/3gpplte_turbo_decoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/3gpplte_turbo_decoder_sse.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/ccoding_byte.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/ccoding_byte_lte.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/crc_byte.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/lte_rate_matching.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/lte_segmentation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/rate_matching.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/viterbi.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/CODING/viterbi_lte.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/INIT/init_top.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/INIT/lte_init.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/INIT/lte_parms.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_ESTIMATION/adjust_gain.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_ESTIMATION/freq_equalization.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_ESTIMATION/lte_sync_time.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_REFSIG/lte_gold.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_REFSIG/lte_ul_ref.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/dci.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/dci_tools.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/dlsch_coding.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/drs_modulation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/group_hopping.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/initial_sync.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/lte_mcs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/pbch.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/pcfich.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/phich.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/pilots.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/power_control.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/prach.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/print_stats.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/pss.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/pucch.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/rar_tools.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/srs_modulation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/sss.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/uci_tools.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/ulsch_coding.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/MODULATION/ofdm_mod.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/MODULATION/slot_fep.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/MODULATION/slot_fep_ul.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/MODULATION/ul_7_5_kHz.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/cadd_vv.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/cdot_prod.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/cmult_sv.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/cmult_vv.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/dB_routines.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/fft.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/file_output.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/log2_approx.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/lte_dfts.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/signal_energy.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/PHY/TOOLS/sqrt.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/SCHED/phy_procedures_lte_common.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SCHED/phy_procedures_lte_eNb.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SCHED/phy_procedures_lte_ue.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SCHED/pucch_pc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/SCHED/pusch_pc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/ETH_TRANSPORT/bypass_session_layer.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/ETH_TRANSPORT/emu_transport.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/ETH_TRANSPORT/multicast_link.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/ETH_TRANSPORT/netlink_init.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/ETH_TRANSPORT/socket.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/RF/adc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/RF/dac.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/RF/rf.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/TOOLS/abstraction.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/TOOLS/gauss.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/TOOLS/multipath_channel.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/TOOLS/random_channel.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/TOOLS/rangen_double.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair1/SIMULATION/TOOLS/taus.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/MAC/config.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/MAC/eNB_scheduler.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/MAC/l1_helpers.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/MAC/lte_transport_init.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/MAC/main.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/MAC/ra_procedures.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/MAC/rar_tools.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/MAC/ue_procedures.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/PDCP_v10.1.0/pdcp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/PDCP_v10.1.0/pdcp_primitives.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/PDCP_v10.1.0/pdcp_sequence_manager.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/PDCP_v10.1.0/pdcp_util.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_in_sdu.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_init.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_reassembly.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_receiver.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_retransmit.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_rx_list.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segment.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segments_holes.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_status_report.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_poll_retransmit.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_reordering.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_status_prohibit.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_windows.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm_init.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/UM_v9.3.0/rlc_um.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_control_primitives.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_dar.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_fsm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_reassembly.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_receiver.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_segment.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_very_simple_test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/rlc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/rlc_mac.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/rlc_mpls.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/LAYER2/RLC/rlc_rrc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/L2_INTERFACE/openair_rrc_L2_interface.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/L2_interface.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/AC-BarringConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ARFCN-ValueCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ARFCN-ValueEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ARFCN-ValueGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ARFCN-ValueUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/AccessStratumRelease.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/AdditionalSpectrumEmission.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/AllowedMeasBandwidth.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/AntennaInfoCommon.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/AntennaInfoDedicated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BCCH-BCH-Message.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BCCH-BCH-MessageType.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BCCH-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BCCH-DL-SCH-Message.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BCCH-DL-SCH-MessageType.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BIT_STRING.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BOOLEAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandClassInfoCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandClassListCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandClassPriority1XRTT.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandClassPriorityHRPD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandClassPriorityList1XRTT.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandClassPriorityListHRPD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandIndicatorGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandInfoEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandListEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BandclassCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BlackCellsToAddMod.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/BlackCellsToAddModList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/C-RNTI.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CDMA2000-Type.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CQI-ReportConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CQI-ReportPeriodic.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CSFB-RegistrationParam1XRTT.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CSFBParametersRequestCDMA2000-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CSFBParametersRequestCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CSFBParametersResponseCDMA2000-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CSFBParametersResponseCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierBandwidthEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqListUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqListUTRA-TDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqUTRA-TDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqsGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqsInfoGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CarrierFreqsInfoListGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellChangeOrder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellGlobalIdCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellGlobalIdEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellGlobalIdGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellGlobalIdUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellIdentity.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellIndex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellIndexList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellReselectionParametersCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellReselectionPriority.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellsToAddMod.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellsToAddModCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellsToAddModList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellsToAddModListCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellsToAddModListUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellsToAddModListUTRA-TDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellsToAddModUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CellsToAddModUTRA-TDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CounterCheck-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CounterCheck.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CounterCheckResponse-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/CounterCheckResponse.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DL-AM-RLC.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DL-CCCH-Message.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DL-CCCH-MessageType.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DL-DCCH-Message.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DL-DCCH-MessageType.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DL-UM-RLC.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DLInformationTransfer-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DLInformationTransfer.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DRB-CountInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DRB-CountInfoList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DRB-CountMSB-Info.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DRB-CountMSB-InfoList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DRB-Identity.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DRB-ToAddMod.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DRB-ToAddModList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DRB-ToReleaseList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DRX-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DedicatedInfoCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DedicatedInfoNAS.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/DeltaFList-PUCCH.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/EstablishmentCause.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ExplicitListOfARFCNs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/FilterCoefficient.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/FreqPriorityEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/FreqPriorityListEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/FreqPriorityListUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/FreqPriorityListUTRA-TDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/FreqPriorityUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/FreqPriorityUTRA-TDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/FreqsPriorityGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/FreqsPriorityListGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/Handover.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/HandoverFromEUTRAPreparationRequest-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/HandoverFromEUTRAPreparationRequest.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/Hysteresis.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IMSI-Digit.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IMSI.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/INTEGER.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IRAT-ParametersCDMA2000-1XRTT.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IRAT-ParametersCDMA2000-HRPD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IRAT-ParametersGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IRAT-ParametersUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IRAT-ParametersUTRA-TDD128.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IRAT-ParametersUTRA-TDD384.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IRAT-ParametersUTRA-TDD768.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IdleModeMobilityControlInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InitialUE-Identity.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InterFreqBandInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InterFreqBandList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InterFreqBlackCellList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InterFreqCarrierFreqInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InterFreqCarrierFreqList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InterFreqNeighCellInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InterFreqNeighCellList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InterRAT-BandInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/InterRAT-BandList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IntraFreqBlackCellList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IntraFreqNeighCellInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/IntraFreqNeighCellList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/LogicalChannelConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MAC-MainConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MBSFN-SubframeConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MBSFN-SubframeConfigList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MCC-MNC-Digit.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MCC.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MMEC.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MNC.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MasterInformationBlock.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasGapConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasId.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasIdToAddMod.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasIdToAddModList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasIdToRemoveList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasObjectCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasObjectEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasObjectGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasObjectId.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasObjectToAddMod.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasObjectToAddModList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasObjectToRemoveList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasObjectUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasParameters.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResultCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResultEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResultGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResultListCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResultListEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResultListGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResultListUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResultUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResults.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasResultsCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasurementReport-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MeasurementReport.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MobilityControlInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MobilityFromEUTRACommand-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MobilityFromEUTRACommand.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MobilityParametersCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/MobilityStateParameters.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/N1-PUCCH-AN-PersistentList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/NULL.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/NativeEnumerated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/NativeInteger.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/NeighCellCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/NeighCellConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/NeighCellListCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/NeighCellsPerBandclassCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/NeighCellsPerBandclassListCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/NextHopChainingCount.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/OCTET_STRING.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/P-Max.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PCCH-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PCCH-Message.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PCCH-MessageType.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PDCP-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PDCP-Parameters.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PDSCH-ConfigCommon.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PDSCH-ConfigDedicated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PHICH-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PLMN-Identity.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PLMN-IdentityInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PLMN-IdentityList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PLMN-IdentityList2.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PRACH-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PRACH-ConfigInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PRACH-ConfigSIB.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PUCCH-ConfigCommon.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PUCCH-ConfigDedicated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PUSCH-ConfigCommon.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PUSCH-ConfigDedicated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/Paging.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PagingRecord.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PagingRecordList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PagingUE-Identity.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PhyLayerParameters.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PhysCellId.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PhysCellIdCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PhysCellIdGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PhysCellIdListCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PhysCellIdRange.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PhysCellIdUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PhysCellIdUTRA-TDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PhysicalConfigDedicated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PollByte.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PollPDU.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PreRegistrationInfoHRPD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PreRegistrationZoneIdHRPD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/PresenceAntennaPort1.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/Q-OffsetRange.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/Q-OffsetRangeInterRAT.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/Q-RxLevMin.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/QuantityConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/QuantityConfigCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/QuantityConfigEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/QuantityConfigGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/QuantityConfigUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RACH-ConfigCommon.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RACH-ConfigDedicated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RAND-CDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RAT-Type.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RF-Parameters.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RLC-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRC-TransactionIdentifier.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReconfiguration-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReconfiguration.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReconfigurationComplete-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReconfigurationComplete.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReestablishment-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReestablishment.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReestablishmentComplete-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReestablishmentComplete.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReestablishmentReject-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReestablishmentReject.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReestablishmentRequest-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReestablishmentRequest.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReject-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionReject.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionRelease-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionRelease.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionRequest-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionRequest.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionSetup-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionSetup.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionSetupComplete-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RRCConnectionSetupComplete.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RSRP-Range.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RSRQ-Range.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RadioResourceConfigCommon.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RadioResourceConfigCommonSIB.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RadioResourceConfigDedicated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RedirectedCarrierInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReestabUE-Identity.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReestablishmentCause.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/RegisteredMME.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReleaseCause.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReportConfigEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReportConfigId.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReportConfigInterRAT.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReportConfigToAddMod.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReportConfigToAddModList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReportConfigToRemoveList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReportInterval.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ReselectionThreshold.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/S-TMSI.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SI-OrPSI-GERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SIB-MappingInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SIB-Type.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SN-FieldLength.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SPS-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SPS-ConfigDL.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SPS-ConfigUL.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SRB-ToAddMod.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SRB-ToAddModList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SchedulingInfo.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SchedulingInfoList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SchedulingRequestConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecondaryPreRegistrationZoneIdListHRPD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecurityAlgorithmConfig.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecurityConfigHO.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecurityConfigSMC.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecurityModeCommand-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecurityModeCommand.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecurityModeComplete-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecurityModeComplete.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecurityModeFailure-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SecurityModeFailure.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ShortMAC-I.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SoundingRS-UL-ConfigCommon.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SoundingRS-UL-ConfigDedicated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SpeedStateScaleFactors.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandList1XRTT.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandListEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandListGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandListHRPD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandListUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandListUTRA-TDD128.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandListUTRA-TDD384.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandListUTRA-TDD768.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandUTRA-FDD.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandUTRA-TDD128.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandUTRA-TDD384.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SupportedBandUTRA-TDD768.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInfoListGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformation-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType1.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType10.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType11.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType2.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType3.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType4.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType5.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType6.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType7.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType8.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemInformationBlockType9.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/SystemTimeInfoCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/T-PollRetransmit.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/T-Reordering.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/T-Reselection.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/T-StatusProhibit.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/TDD-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/TPC-Index.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/TPC-PDCCH-Config.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ThresholdCDMA2000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ThresholdEUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ThresholdGERAN.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ThresholdUTRA.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/TimeAlignmentTimer.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/TimeToTrigger.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/TrackingAreaCode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UE-CapabilityRAT-Container.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UE-CapabilityRAT-ContainerList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UE-CapabilityRequest.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UE-EUTRA-Capability.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UE-TimersAndConstants.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UECapabilityEnquiry-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UECapabilityEnquiry.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UECapabilityInformation-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UECapabilityInformation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UL-AM-RLC.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UL-CCCH-Message.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UL-CCCH-MessageType.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UL-CyclicPrefixLength.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UL-DCCH-Message.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UL-DCCH-MessageType.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UL-ReferenceSignalsPUSCH.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UL-UM-RLC.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ULHandoverPreparationTransfer-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ULHandoverPreparationTransfer.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ULInformationTransfer-r8-IEs.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ULInformationTransfer.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UplinkPowerControlCommon.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/UplinkPowerControlDedicated.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/asn1_msg.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/asn_SEQUENCE_OF.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/asn_SET_OF.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/asn_codecs_prim.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ber_decoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ber_tlv_length.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/ber_tlv_tag.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/constr_CHOICE.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/constr_SEQUENCE.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/constr_SEQUENCE_OF.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/constr_SET_OF.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/constr_TYPE.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/constraints.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/der_encoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/per_decoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/per_encoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/per_opentype.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/per_support.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/xer_decoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/xer_encoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/MESSAGES/xer_support.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/rrc_UE.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/rrc_common.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/LITE/rrc_eNB.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/NAS/nas_config.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/RRC/NAS/rb_config.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/CLI/cli.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/CLI/cli_cmd.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/CLI/cli_server.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/LISTS/list.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/LISTS/list2.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/LOG/log.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/LOG/vcd_signal_dumper.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/UTIL/MATH/oml.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/MEM/mem_block.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OCG/OCG.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OCG/OCG_create_dir.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OCG/OCG_detect_file.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OCG/OCG_generate_report.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OCG/OCG_parse_XML.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OCG/OCG_parse_filename.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OCG/OCG_save_XML.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/client_traci_OMG.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/common.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/hashtable.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/id_manager.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/job.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/mobility_parser.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/omg.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/rwalk.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/rwp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/socket_traci_OMG.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/static.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/storage_traci_OMG.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/sumo.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OMG/trace.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OPT/probe.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OTG/otg.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OTG/otg_form.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OTG/otg_kpi.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OTG/otg_rx.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/OTG/otg_tx.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openair2/UTIL/TIMER/umts_timer.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="phy_procedures_sim_form.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>.</pElem>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>openair1</pElem>
+            <pElem>openair2</pElem>
+            <pElem>openair2/COMMON</pElem>
+            <pElem>openair2/LAYER2/RLC</pElem>
+            <pElem>openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>openair2/RRC/LITE</pElem>
+            <pElem>openair2/UTIL/MEM</pElem>
+            <pElem>openair2/UTIL/LISTS</pElem>
+            <pElem>openair2/UTIL/OCG</pElem>
+            <pElem>openair2/UTIL/LOG</pElem>
+            <pElem>openair2/UTIL/MATH</pElem>
+            <pElem>openair2/UTIL/TIMER</pElem>
+            <pElem>openair2/UTIL/OMG</pElem>
+            <pElem>openair2/UTIL/OTG</pElem>
+            <pElem>openair2/UTIL/CLI</pElem>
+            <pElem>openair2/UTIL/OPT</pElem>
+            <pElem>openair2/UTIL/OMV</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="sinr_sim.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/include/X11</pElem>
+            <pElem>/usr/include/libxml2</pElem>
+            <pElem>/usr/include/atlas</pElem>
+            <pElem>.</pElem>
+            <pElem>openair2/RRC/LITE/MESSAGES</pElem>
+            <pElem>openair1</pElem>
+            <pElem>openair2</pElem>
+            <pElem>openair2/COMMON</pElem>
+            <pElem>openair2/LAYER2/RLC</pElem>
+            <pElem>openair2/LAYER2/RLC/AM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/UM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/RLC/TM_v9.3.0</pElem>
+            <pElem>openair2/LAYER2/PDCP_v10.1.0</pElem>
+            <pElem>/MESH</pElem>
+            <pElem>/MESH/RRM</pElem>
+            <pElem>openair2/RRC/LITE</pElem>
+            <pElem>openair2/UTIL/MEM</pElem>
+            <pElem>openair2/UTIL/LISTS</pElem>
+            <pElem>openair2/UTIL/OCG</pElem>
+            <pElem>openair2/UTIL/LOG</pElem>
+            <pElem>openair2/UTIL/MATH</pElem>
+            <pElem>openair2/UTIL/TIMER</pElem>
+            <pElem>openair2/UTIL/OMG</pElem>
+            <pElem>openair2/UTIL/OTG</pElem>
+            <pElem>openair2/UTIL/CLI</pElem>
+            <pElem>openair2/UTIL/OPT</pElem>
+            <pElem>openair2/UTIL/OMV</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ASSERT</Elem>
+            <Elem>ENABLE_FXP</Elem>
+            <Elem>ENABLE_USE_CPU_EXECUTION_TIME</Elem>
+            <Elem>LINUX</Elem>
+            <Elem>MAC_CONTEXT=1</Elem>
+            <Elem>NAS_NETLINK</Elem>
+            <Elem>NB_ANTENNAS_RX=2</Elem>
+            <Elem>NB_ANTENNAS_TX=2</Elem>
+            <Elem>NB_ANTENNAS_TXRX=2</Elem>
+            <Elem>NO_RRM</Elem>
+            <Elem>OAI_EMU</Elem>
+            <Elem>OPENAIR2</Elem>
+            <Elem>OPENAIR_LTE</Elem>
+            <Elem>PC_DSP</Elem>
+            <Elem>PC_TARGET</Elem>
+            <Elem>PHYSIM</Elem>
+            <Elem>PHY_ABSTRACTION</Elem>
+            <Elem>PHY_CONTEXT=1</Elem>
+            <Elem>PUCCH</Elem>
+            <Elem>USER_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

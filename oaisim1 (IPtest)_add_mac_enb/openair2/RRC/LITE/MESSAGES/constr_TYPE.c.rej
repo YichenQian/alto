@@ -1,0 +1,44 @@
+*** homes/kaltenbe/Devel/openair/openair_branches/openair_lte/openair2/RRC/LITE/MESSAGES/asn1c/asn1c/skeletons/constr_TYPE.c	2011-03-31 10:22:56.000000000 +0200
+--- constr_TYPE.c	2011-05-31 10:28:26.000000000 +0200
+***************
+*** 4,10 ****
+   */
+  #include <asn_internal.h>
+  #include <constr_TYPE.h>
+- #include <errno.h>
+  
+  /*
+   * Version of the ASN.1 infrastructure shipped with compiler.
+--- 4,9 ----
+   */
+  #include <asn_internal.h>
+  #include <constr_TYPE.h>
+  
+  /*
+   * Version of the ASN.1 infrastructure shipped with compiler.
+***************
+*** 29,34 ****
+  	return type_descriptor->outmost_tag(type_descriptor, struct_ptr, 0, 0);
+  }
+  
+  /*
+   * Print the target language's structure in human readable form.
+   */
+--- 28,34 ----
+  	return type_descriptor->outmost_tag(type_descriptor, struct_ptr, 0, 0);
+  }
+  
++ #ifdef USER_MODE
+  /*
+   * Print the target language's structure in human readable form.
+   */
+***************
+*** 75,77 ****
+  	fprintf(stderr, "\n");
+  	va_end(ap);
+  }
+--- 75,78 ----
+  	fprintf(stderr, "\n");
+  	va_end(ap);
+  }
++ #endif

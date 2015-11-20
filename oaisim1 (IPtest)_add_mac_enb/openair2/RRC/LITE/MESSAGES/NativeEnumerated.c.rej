@@ -1,0 +1,35 @@
+*** homes/kaltenbe/Devel/openair/openair_branches/openair_lte/openair2/RRC/LITE/MESSAGES/asn1c/asn1c/skeletons/NativeEnumerated.c	2011-03-31 10:22:57.000000000 +0200
+--- NativeEnumerated.c	2011-05-31 10:28:26.000000000 +0200
+***************
+*** 46,51 ****
+                  asn_app_consume_bytes_f *cb, void *app_key) {
+  	asn_INTEGER_specifics_t *specs=(asn_INTEGER_specifics_t *)td->specifics;
+          asn_enc_rval_t er;
+          const long *native = (const long *)sptr;
+  	const asn_INTEGER_enum_map_t *el;
+  
+--- 46,52 ----
+                  asn_app_consume_bytes_f *cb, void *app_key) {
+  	asn_INTEGER_specifics_t *specs=(asn_INTEGER_specifics_t *)td->specifics;
+          asn_enc_rval_t er;
++ 	char scratch[128];
+          const long *native = (const long *)sptr;
+  	const asn_INTEGER_enum_map_t *el;
+  
+***************
+*** 57,63 ****
+  	el = INTEGER_map_value2enum(specs, *native);
+  	if(el) {
+  		size_t srcsize = el->enum_len + 5;
+! 		char *src = (char *)alloca(srcsize);
+  
+  		er.encoded = snprintf(src, srcsize, "<%s/>", el->enum_name);
+  		assert(er.encoded > 0 && (size_t)er.encoded < srcsize);
+--- 58,64 ----
+  	el = INTEGER_map_value2enum(specs, *native);
+  	if(el) {
+  		size_t srcsize = el->enum_len + 5;
+! 		char *src = (char *)scratch; //alloca(srcsize);
+  
+  		er.encoded = snprintf(src, srcsize, "<%s/>", el->enum_name);
+  		assert(er.encoded > 0 && (size_t)er.encoded < srcsize);

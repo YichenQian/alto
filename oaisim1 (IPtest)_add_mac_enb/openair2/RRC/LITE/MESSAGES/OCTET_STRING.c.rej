@@ -1,0 +1,18 @@
+*** homes/kaltenbe/Devel/openair/openair_branches/openair_lte/openair2/RRC/LITE/MESSAGES/asn1c/asn1c/skeletons/OCTET_STRING.c	2011-03-31 10:22:55.000000000 +0200
+--- OCTET_STRING.c	2011-05-31 10:28:26.000000000 +0200
+***************
+*** 6,12 ****
+  #include <asn_internal.h>
+  #include <OCTET_STRING.h>
+  #include <BIT_STRING.h>	/* for .bits_unused member */
+- #include <errno.h>
+  
+  /*
+   * OCTET STRING basic type description.
+--- 6,11 ----
+  #include <asn_internal.h>
+  #include <OCTET_STRING.h>
+  #include <BIT_STRING.h>	/* for .bits_unused member */
+  
+  /*
+   * OCTET STRING basic type description.
